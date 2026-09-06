@@ -3,7 +3,7 @@
 The website is a standalone static page in `docs/`. Open `docs/index.html` directly to preview it. No build or JavaScript dependencies are required.
 
 - Update authors and affiliations in `docs/index.html`.
-- Replace the disabled arXiv button with an `<a href="https://arxiv.org/abs/ACTUAL_ID">arXiv</a>` when available.
+- Paper link: https://arxiv.org/abs/2607.15036 (keep README and website links synchronized).
 - When code is released, replace the disabled Code button with a link to its repository.
 - Keep the abstract in `README.md` and `docs/index.html` synchronized.
 - `docs/assets/framework.png` comes from `VOP-Nav/fig_sync/system_new.png` in the local research workspace.

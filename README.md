@@ -2,7 +2,7 @@
 
 ## Learning Agile Navigation in Crowded Environments for Quadruped Robots
 
-[Project page](https://sawyer-wu.github.io/Vop-Nav/) · **Code: Coming soon** · **arXiv: Coming soon**
+[Project page](https://sawyer-wu.github.io/Vop-Nav/) · **Code: Coming soon** · [arXiv](https://arxiv.org/abs/2607.15036)
 
 ## Abstract
 

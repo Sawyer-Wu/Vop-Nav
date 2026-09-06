@@ -8,7 +8,10 @@ h1 { margin: 0; font-size: 38px; line-height: 1.2; font-weight: 650; text-wrap: 
 .authors { margin: 25px 0 8px; font-size: 19px; color: #526371; }
 .affiliations { margin: 0; font-size: 16px; color: #656565; }
 .resources { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 23px; }
-.resources button { font: inherit; display: inline-flex; align-items: center; gap: 9px; padding: 11px 17px; border: 1px solid #d9dedc; border-radius: 6px; color: #444; background: #f2f5f4; opacity: 1; cursor: default; }
+.resources button, .resources a { font: inherit; display: inline-flex; align-items: center; gap: 9px; padding: 11px 17px; border: 1px solid #d9dedc; border-radius: 6px; color: #444; background: #f2f5f4; opacity: 1; }
+.resources button { cursor: default; }
+.resources a { text-decoration: none; color: #fff; background: #24786d; border-color: #24786d; }
+.resources a:hover { background: #1b6057; }
 .resources button span { font-size: 12px; color: #696969; }
 figure { margin: 0; }
 video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #161616; border-radius: 4px; }
