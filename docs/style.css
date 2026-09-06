@@ -4,15 +4,20 @@ body { margin: 0; }
 main { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
 .publication { max-width: 920px; margin: 0 auto; padding: 54px 0 30px; text-align: center; }
 h1 { margin: 0; font-size: 38px; line-height: 1.2; font-weight: 650; text-wrap: balance; }
-.project-name { display: block; margin-bottom: 14px; color: #24786d; font-size: 48px; font-weight: 750; }
-.authors { margin: 25px 0 8px; font-size: 19px; color: #526371; }
+.project-name { display: block; margin-bottom: 14px; color: #111; font-size: 48px; font-weight: 750; }
+.authors { margin: 25px 0 8px; font-size: 18px; line-height: 1.65; color: #444; }
+.authors a { color: #245b94; text-decoration: none; }
+.authors a:hover { text-decoration: underline; }
+.authors sup, .affiliations sup { font-size: .62em; vertical-align: super; }
 .affiliations { margin: 0; font-size: 16px; color: #656565; }
+.affiliations small { font-size: 13px; }
 .resources { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 23px; }
-.resources button, .resources a { font: inherit; display: inline-flex; align-items: center; gap: 9px; padding: 11px 17px; border: 1px solid #d9dedc; border-radius: 6px; color: #444; background: #f2f5f4; opacity: 1; }
+.resources button, .resources a { font: inherit; display: inline-flex; align-items: center; gap: 9px; padding: 11px 17px; border: 1px solid #333; border-radius: 6px; color: #fff; background: #333; opacity: 1; }
 .resources button { cursor: default; }
-.resources a { text-decoration: none; color: #fff; background: #24786d; border-color: #24786d; }
-.resources a:hover { background: #1b6057; }
-.resources button span { font-size: 12px; color: #696969; }
+.resources a { text-decoration: none; }
+.resources a:hover { background: #111; }
+.resources button span { font-size: 12px; color: #d4d4d4; }
+.resources img { width: 17px; height: 17px; filter: invert(1); }
 figure { margin: 0; }
 video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #161616; border-radius: 4px; }
 figcaption { margin-top: 14px; color: #616161; font-size: 15px; line-height: 1.6; text-align: center; }
