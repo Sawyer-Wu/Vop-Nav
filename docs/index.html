@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VOP-Nav: Learning Agile Navigation in Crowded Environments for Quadruped Robots.">
+  <meta name="theme-color" content="#ffffff">
+  <title>VOP-Nav | Learning Agile Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="publication">
+      <h1><span class="project-name">VOP-Nav</span>Learning Agile Navigation in Crowded Environments for Quadruped Robots</h1>
+      <!-- Replace with the final author list and affiliation superscripts. -->
+      <p class="authors">Authors to be announced</p>
+      <p class="affiliations">Affiliations to be announced</p>
+      <div class="resources" aria-label="Publication resources">
+        <!-- Replace the disabled arXiv button with an anchor when the paper is public. -->
+        <button disabled>arXiv <span>Coming soon</span></button>
+        <button disabled>Code <span>Coming soon</span></button>
+      </div>
+    </header>
+    <figure class="demo">
+      <video controls playsinline preload="metadata" poster="assets/poster.jpg" width="1920" height="1080" aria-label="VOP-Nav real-world experiments">
+        <source src="assets/realworld.mp4" type="video/mp4">
+        <a href="assets/realworld.mp4">Download the experiment video</a>.
+      </video>
+      <figcaption>VOP-Nav in the real world</figcaption>
+    </figure>
+    <section class="abstract" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p>Navigating dynamic and crowded environments presents significant challenges for quadruped robots due to severe sensor occlusion and unpredictable human motion. Existing approaches face a trade-off: model-based methods, such as Velocity Obstacles (VO), theoretically guarantee safety but rely on accurate obstacle motion estimates that often fail in dense crowds, while end-to-end learning methods offer robustness but lack motion prediction capability of obstacles, leading to collisions or conservative behaviors. To solve this, we propose VOP-Nav, a novel navigation system that combines the geometric safety of VO with the agile adaptability of end-to-end learning. Using only local onboard observations, our system avoids explicit obstacle detection and tracking pipelines. The VOP-Net processes multi-frame LiDAR data to implicitly encode dynamic constraints and predict a safe velocity region derived from Velocity Obstacle theory. Importantly, the VO predictions serve a dual role: they are used as input to the navigation policy during inference and as a reward signal during training to encourage safe motion. Evaluations in Isaac Gym demonstrate that VOP-Nav achieves higher success rates than all baselines while balancing locomotion speed and collision avoidance. Real-world deployment on a Unitree Go2 quadruped robot further validates the system's robustness and efficiency in complex indoor and outdoor dynamic environments.</p>
+    </section>
+    <section class="framework" aria-labelledby="framework-title">
+      <h2 id="framework-title">Framework</h2>
+      <figure>
+        <a href="assets/framework.png" aria-label="View full-resolution VOP-Nav framework">
+          <img src="assets/framework.png" width="4147" height="1801" loading="lazy" alt="VOP-Nav framework: train a basic policy, collect trajectories to train VOP-Net, then train the navigation policy using safe velocity predictions; deploy with onboard sensors and a PD controller.">
+        </a>
+        <figcaption>Three-stage training in simulation and real-world deployment on the Unitree Go2. VOP-Net predictions guide the navigation policy both as inputs and as a training reward signal.</figcaption>
+      </figure>
+    </section>
+  </main>
+  <footer>VOP-Nav</footer>
+</body>
+</html>

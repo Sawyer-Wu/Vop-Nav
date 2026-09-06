@@ -1,0 +1,35 @@
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #292929; background: #fff; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+.publication { max-width: 920px; margin: 0 auto; padding: 54px 0 30px; text-align: center; }
+h1 { margin: 0; font-size: 38px; line-height: 1.2; font-weight: 650; text-wrap: balance; }
+.project-name { display: block; margin-bottom: 14px; color: #24786d; font-size: 48px; font-weight: 750; }
+.authors { margin: 25px 0 8px; font-size: 19px; color: #526371; }
+.affiliations { margin: 0; font-size: 16px; color: #656565; }
+.resources { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 23px; }
+.resources button { font: inherit; display: inline-flex; align-items: center; gap: 9px; padding: 11px 17px; border: 1px solid #d9dedc; border-radius: 6px; color: #444; background: #f2f5f4; opacity: 1; cursor: default; }
+.resources button span { font-size: 12px; color: #696969; }
+figure { margin: 0; }
+video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #161616; border-radius: 4px; }
+figcaption { margin-top: 14px; color: #616161; font-size: 15px; line-height: 1.6; text-align: center; }
+section { margin-top: 58px; }
+h2 { margin: 0 0 23px; font-size: 29px; font-weight: 650; text-align: center; }
+.abstract { max-width: 860px; margin-left: auto; margin-right: auto; }
+.abstract p { margin: 0; font-size: 17px; line-height: 1.8; text-align: left; }
+.framework img { display: block; width: 100%; height: auto; background: white; }
+.framework figcaption { max-width: 850px; margin-left: auto; margin-right: auto; }
+a { color: #23756b; }
+a:focus-visible { outline: 3px solid #23756b; outline-offset: 5px; }
+footer { margin-top: 62px; padding: 25px; border-top: 1px solid #eceeed; color: #727272; font-size: 13px; text-align: center; }
+@media (max-width: 600px) {
+  main { padding: 0 18px; }
+  .publication { padding-top: 32px; padding-bottom: 25px; }
+  h1 { font-size: 27px; }
+  .project-name { font-size: 38px; }
+  .authors { font-size: 17px; }
+  .affiliations { font-size: 15px; }
+  h2 { font-size: 25px; }
+  section { margin-top: 40px; }
+  .abstract p { font-size: 16px; line-height: 1.75; }
+}
